@@ -6,4 +6,6 @@ docker run --rm --name grundstuecksinformation-db -p 54321:5432 --hostname prima
 
 ```
 java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54321 --dbdatabase grundstuecksinformation --dbusr admin --dbpwd admin --dbschema agi_av_nf_statistik --nameByTopic --createFk --createFkIdx --createMetaInfo --models SO_AGI_AV_NF_Statistik_20200615 --modeldir .  --schemaimport
+
+java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54321 --dbdatabase grundstuecksinformation --dbusr admin --dbpwd admin --dbschema agi_av_nf_statistik --models SO_AGI_AV_NF_Statistik_20200615 --modeldir .  --export agi_av_nf_statistik.xtf
 ```
