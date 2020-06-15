@@ -22046,7 +22046,7 @@
 <DefLangName>Grenchen</DefLangName>
 </ch.ehi.interlis.attributes.AttributeDef>
 <ch.ehi.basics.types.NlsString TID="4993">
-<Entry TID="4994" language="de" translation=""/>
+<Entry TID="4994" language="de" translation="Anzahl Mutationen im Nachf&#252;hrungskreis Grenchen/Bettlach"/>
 </ch.ehi.basics.types.NlsString>
 <ch.ehi.interlis.attributes.DomainAttribute TID="4992">
 <Direct>4995</Direct>

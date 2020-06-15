@@ -32,6 +32,8 @@ VERSION "2020-04-29"  =
       /** Anzahl Mutationen im Bezirk Gösgen
        */
       Goesgen : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Nachführungskreis Grenchen/Bettlach
+       */
       Grenchen : MANDATORY 0 .. 10000;
       /** Anzahl Mutationen im Bezirk Lebern
        */
