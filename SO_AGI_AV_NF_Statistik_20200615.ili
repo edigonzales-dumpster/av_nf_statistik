@@ -1,0 +1,66 @@
+INTERLIS 2.3;
+
+/** !!------------------------------------------------------------------------------
+ *  !! Version    | wer | Änderung
+ *  !!------------------------------------------------------------------------------
+ *  !! 2020-06-15 | sz  | Ersterfassung
+ *  !!==============================================================================
+ */
+!!@ technicalContact=mailto:agi@bd.so.ch
+!!@ furtherInformation=http://geo.so.ch/models/AFU/SO_AFU_Igel_20200429.uml
+MODEL SO_AGI_AV_NF_Statistik_20200615 (de)
+AT "https://afu.so.ch"
+VERSION "2020-04-29"  =
+
+  /** Nachführungsstatistik der amtlichen Vermessung
+   */
+  TOPIC Nachfuehrungsstatistik =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Anzahl Mutationen
+     */
+    CLASS Mutation (ABSTRACT) =
+      /** Anzahl Mutationen im Bezirk Bucheggberg
+       */
+      Bucheggberg : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Dorneck
+       */
+      Dorneck : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Gäu
+       */
+      Gaeu : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Gösgen
+       */
+      Goesgen : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Lebern
+       */
+      Lebern : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Olten
+       */
+      Olten : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Solothurn
+       */
+      Solothurn : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Thal
+       */
+      Thal : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Thierstein
+       */
+      Thierstein : MANDATORY 0 .. 10000;
+      /** Anzahl Mutationen im Bezirk Wasseramt
+       */
+      Wasseramt : MANDATORY 0 .. 10000;
+      /** Betroffenes Jahr
+       */
+      Jahr : MANDATORY INTERLIS.GregorianYear;
+    END Mutation;
+
+    /** Anzahl Grundstücksmutationen
+     */
+    CLASS Grundstuecksmutation
+    EXTENDS Mutation =
+    END Grundstuecksmutation;
+
+  END Nachfuehrungsstatistik;
+
+END SO_AGI_AV_NF_Statistik_20200615.
